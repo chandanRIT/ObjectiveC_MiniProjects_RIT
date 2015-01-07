@@ -1,0 +1,13 @@
+ gcc -arch i386 -o shell Node.m CommandHistory.m shell.m  -framework Foundation
+
+# On the Mac machines: Command line compilation is
+
+gcc -o test test.m Node.m CommandHistory.m -framework Foundation
+
+# On the Linux machines: command line compilation is
+
+gcc -I/usr/local/pub/jeh/rit -o test test.m Node.m CommandHistory.m -L/usr/local/pub/jeh/rit/Foundation -lfoundation -lobjc
+
+# or for more debug output about objects allocated/deallocated,
+
+gcc -I/usr/local/pub/jeh/rit -o test test.m Node.m CommandHistory.m -L/usr/local/pub/jeh/rit/Foundation -lfoundationD -lobjc

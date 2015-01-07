@@ -1,0 +1,164 @@
+legolas:lab2_stu amo9149$ ./shell
+ObjcShell[1] -> ls
+CommandHistory.h	Node.h			compile.txt		shell.h
+CommandHistory.m	Node.m			shell			shell.m
+ObjcShell[2] -> pwd
+/home/stu2/s2/amo9149/objc/lab2_stu
+ObjcShell[3] -> tail compile.txt
+ gcc -arch i386 -o shell Node.m CommandHistory.m shell.m  -framework Foundation
+ ObjcShell[4] -> gcc -c Node.m
+ ObjcShell[5] -> getHistory
+
+ Command History:
+ [pid 77033] 1: ls
+ [pid 77033] 2: pwd
+ [pid 77033] 3: tail compile.txt
+ [pid 77033] 4: gcc -c Node.m
+ [pid 77033] 5: getHistory
+ ObjcShell[6] -> save 5 0
+ ObjcShell[7] -> getSaved
+ At position 0: getHistory
+
+ ObjcShell[8] -> exec 0
+ ObjcShell[9] -> getHistory
+
+ Command History:
+ [pid 77033] 2: pwd
+ [pid 77033] 3: tail compile.txt
+ [pid 77033] 4: gcc -c Node.m
+ [pid 77033] 5: getHistory
+ [pid 77033] 6: save 5 0
+ [pid 77033] 7: getSaved
+ [pid 77033] 8: exec 0
+ [pid 77033] 9: getHistory
+ ObjcShell[10] -> save 8 1
+ ObjcShell[11] -> getSaved
+ At position 0: getHistory
+
+ At position 1: exec 0
+
+ ObjcShell[12] -> save 4 2
+ Error: invalid index.
+ ObjcShell[13] -> getHistory
+
+ Command History:
+ [pid 77033] 6: save 5 0
+ [pid 77033] 7: getSaved
+ [pid 77033] 8: exec 0
+ [pid 77033] 9: getHistory
+ [pid 77033] 10: save 8 1
+ [pid 77033] 11: getSaved
+ [pid 77033] 12: save 4 2
+ [pid 77033] 13: getHistory
+ ObjcShell[14] -> gcc -c Node.m
+ ObjcShell[15] -> getHistory
+
+ Command History:
+ [pid 77033] 8: exec 0
+ [pid 77033] 9: getHistory
+ [pid 77033] 10: save 8 1
+ [pid 77033] 11: getSaved
+ [pid 77033] 12: save 4 2
+ [pid 77033] 13: getHistory
+ [pid 77033] 14: gcc -c Node.m
+ [pid 77033] 15: getHistory
+ ObjcShell[16] -> save 14 2
+ ObjcShell[17] -> getSaved 
+ At position 0: getHistory
+
+ At position 1: exec 0
+
+ At position 2: gcc -c Node.m
+
+ ObjcShell[18] -> exec 2
+ ObjcShell[19] -> gcc -c Node.m
+ ObjcShell[20] -> setHistorySize 4
+ History buffer resized to 4
+ ObjcShell[21] -> getHistory
+
+ Command History:
+ [pid 77033] 18: exec 2
+ [pid 77033] 19: gcc -c Node.m
+ [pid 77033] 20: setHistorySize 4
+ [pid 77033] 21: getHistory
+ ObjcShell[22] -> getSaved
+ At position 0: getHistory
+
+ At position 1: exec 0
+
+ At position 2: gcc -c Node.m
+
+ ObjcShell[23] -> ls
+ CommandHistory.h	Node.h			Node.o			shell			shell.m
+ CommandHistory.m	Node.m			compile.txt		shell.h
+ ObjcShell[24] -> pwd
+ /home/stu2/s2/amo9149/objc/lab2_stu
+ ObjcShell[25] -> ls -l
+ total 88
+ -rw-------  1 amo9149  ugrad   1716 Apr  2 22:46 CommandHistory.h
+ -rw-------  1 amo9149  ugrad   2541 Apr  2 22:46 CommandHistory.m
+ -rw-------  1 amo9149  ugrad   1075 Apr  2 22:46 Node.h
+ -rw-------  1 amo9149  ugrad    671 Apr  2 22:46 Node.m
+ -rw-r--r--  1 amo9149  ugrad   6864 Apr  2 22:49 Node.o
+ -rw-r--r--  1 amo9149  ugrad     80 Apr  2 22:46 compile.txt
+ -rwxr-xr-x  1 amo9149  ugrad  23112 Apr  2 22:46 shell
+ -rw-------  1 amo9149  ugrad   1580 Apr  2 22:46 shell.h
+ -rw-------  1 amo9149  ugrad   4528 Apr  2 22:45 shell.m
+ ObjcShell[26] -> rm Node.o
+ ObjcShell[27] -> getHistory
+
+ Command History:
+ [pid 77033] 24: pwd
+ [pid 77033] 25: ls -l
+ [pid 77033] 26: rm Node.o
+ [pid 77033] 27: getHistory
+ ObjcShell[28] -> setHistorySize 20
+ History buffer resized to 20
+ ObjcShell[29] -> getHistory
+
+ Command History:
+ [pid 77033] 25: ls -l
+ [pid 77033] 26: rm Node.o
+ [pid 77033] 27: getHistory
+ [pid 77033] 28: setHistorySize 20
+ [pid 77033] 29: getHistory
+ ObjcShell[30] -> ls
+ CommandHistory.h	Node.h			compile.txt		shell.h
+ CommandHistory.m	Node.m			shell			shell.m
+ ObjcShell[31] -> pwd
+ /home/stu2/s2/amo9149/objc/lab2_stu
+ ObjcShell[32] -> tail compile.txt
+  gcc -arch i386 -o shell Node.m CommandHistory.m shell.m  -framework Foundation
+  ObjcShell[33] -> ls -l
+  total 74
+  -rw-------  1 amo9149  ugrad   1716 Apr  2 22:46 CommandHistory.h
+  -rw-------  1 amo9149  ugrad   2541 Apr  2 22:46 CommandHistory.m
+  -rw-------  1 amo9149  ugrad   1075 Apr  2 22:46 Node.h
+  -rw-------  1 amo9149  ugrad    671 Apr  2 22:46 Node.m
+  -rw-r--r--  1 amo9149  ugrad     80 Apr  2 22:46 compile.txt
+  -rwxr-xr-x  1 amo9149  ugrad  23112 Apr  2 22:46 shell
+  -rw-------  1 amo9149  ugrad   1580 Apr  2 22:46 shell.h
+  -rw-------  1 amo9149  ugrad   4528 Apr  2 22:45 shell.m
+  ObjcShell[34] -> getHistory
+
+  Command History:
+  [pid 77033] 25: ls -l
+  [pid 77033] 26: rm Node.o
+  [pid 77033] 27: getHistory
+  [pid 77033] 28: setHistorySize 20
+  [pid 77033] 29: getHistory
+  [pid 77033] 30: ls
+  [pid 77033] 31: pwd
+  [pid 77033] 32: tail compile.txt
+  [pid 77033] 33: ls -l
+  [pid 77033] 34: getHistory
+  ObjcShell[35] -> getSaved
+  At position 0: getHistory
+
+  At position 1: exec 0
+
+  At position 2: gcc -c Node.m
+
+  ObjcShell[36] -> ^D
+  Exiting because Control+D was pressed.
+  legolas:lab2_stu amo9149$ 

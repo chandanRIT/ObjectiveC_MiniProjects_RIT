@@ -1,0 +1,36 @@
+Lab 2: Memory management
+
+Part 1:
+Implement a circular list by filling in the empty methods in CommandHistory.m and Node.m.  Follow the comments within the method bodies and in the header files.
+
+Run test.m and verify that your output is OK.
+Examine your code to see if your reference counts are correct.  You will need to call retain and release as well as C's free().
+
+Part 2:
+
+You will now use your circular list to store commands made through a dummy shell. These commands can also be saved to a clipboard within the shell.
+
+The following special commands are available in the shell:
+
+getHistory (implemented for you*)
+getSaved (implemented for you*)
+save [command id] [slot id]
+exec [slot id]
+setHistorySize (implemented for you*)
+
+Save and exec save commands from the history and allow you to run them later.
+
+*will only work with a fully functional part 1 implementation
+
+Open shell.m and fill in the missing code.  There are numerous memory management omissions as well, so find and fix them.
+As before, you will need to call ratain and release in various places.
+
+Once done, compile using the command in compile.txt and run your shell.
+
+See if your output is the same as that in samplerun.txt.
+Ensure that your reference counts are correct.  We do not provide any explicit tests for this.
+
+For a fully working solution you will need to edit CommandHistory.m, Node.m, and shell.m.
+To receive full credit, you should have no memory leaks and all memory should be freed on exit.
+
+Exit the shell using Control+D to ensure that all of your routines get executed.
