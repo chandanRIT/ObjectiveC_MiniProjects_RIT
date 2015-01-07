@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RestaurantMenuOSX' target in the 'RestaurantMenuOSX' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

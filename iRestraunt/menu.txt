@@ -1,0 +1,9 @@
+Pizza Wizza, 10.5
+Pasta, 8.88
+Sand wich, 6.66
+Soup, 4.12
+Noodles, 12.12
+Fries, 3
+Salad, 5
+Fruit, 4
+Sub, 6

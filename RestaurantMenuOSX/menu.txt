@@ -1,0 +1,9 @@
+Pizza,10
+Pasta,8
+Sandwich,6
+Soup,4
+Noodles,12
+Fries,3
+Salad,5
+Fruit,4
+Sub,6
